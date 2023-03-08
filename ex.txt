@@ -1,1 +1,29 @@
+
 file
+
+win10@DESKTOP-87BQM9I MINGW64 ~/Desktop/practise (master)
+$ ls
+dileep  dileep.pub  ex.txt
+
+win10@DESKTOP-87BQM9I MINGW64 ~/Desktop/practise (master)
+$ vi dileep.pub
+
+win10@DESKTOP-87BQM9I MINGW64 ~/Desktop/practise (master)
+$ ssh-add dileep
+Could not open a connection to your authentication agent.
+
+win10@DESKTOP-87BQM9I MINGW64 ~/Desktop/practise (master)
+$ eval`ssh-agent -s`
+bash: evalSSH_AUTH_SOCK=/tmp/ssh-Gx1OgUqBtQnz/agent.2140;: No such file or directory
+
+win10@DESKTOP-87BQM9I MINGW64 ~/Desktop/practise (master)
+$ eval `ssh-agent -s`
+Agent pid 2148
+
+win10@DESKTOP-87BQM9I MINGW64 ~/Desktop/practise (master)
+$ ssh-add dileep
+Enter passphrase for dileep:
+Identity added: dileep (win10@DESKTOP-87BQM9I)
+
+win10@DESKTOP-87BQM9I MINGW64 ~/Desktop/practise (master)
+$
